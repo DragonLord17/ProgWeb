@@ -1,0 +1,116 @@
+
+<!--
+  + icono de FACEBOOK (llevar al muro principal)
+  + icono de instagram (imagen mas representativa)
+  + agregar al inicio un buscador que los redireccione al buscador de google en <aside>
+
+  </aside>
+ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisones Sem&aacute;ticas</title>
+  <!-- <link rel="stylesheet" href="misestilos.css"> Aun sin estilos -->
+</head>
+<body>
+<div id="agrupar">
+
+  <header id="cabecera">
+      <h1>Este es el título principal del sitio web</h1>
+  </header>
+  
+  <nav id="buscador">
+      <form method="GET" action="https://www.google.com/search" target="_blank">
+          <fieldset>
+              <input type="hidden" name="ie" value="UTF-8">
+              <input type="hidden" name="oe" value="UTF-8">
+              <input type="text" id="search" name="q" value="" size="30" placeholder="Buscar ...">
+              <input type="submit" id="x" name="btnG" value="Buscar">
+          </fieldset>
+      </form>
+  </nav>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#">principal</a></li>
+      <li><a href="#">fotos</a></li>
+      <li><a href="#">videos</a></li>
+      <li><a href="#columna">contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="seccion">
+      <article><!--Primer articulo-->
+        <header>
+              <hgroup>
+                  <h1>Título del mensaje uno</h1>
+                  <h4>Título del mensaje dos</h4>
+              </hgroup>
+              <time datetime="2020-02-15" pubdate>
+                    publicado 15-02-2020
+              </time>
+        </header>
+          Este es el texto de mi primer mensaje
+          <figure>
+                <img src="img/buho.jpg">
+                <figcaption>
+                    Esta es la imagen del primer mensaje
+                </figcaption>
+          </figure>
+
+          <footer>
+              <p>comentarios (0)</p>
+          </footer>
+      </article><!-- Fin Primer articulo-->
+
+      <article><!-- Segundo articulo-->
+          <header>
+            <hgroup>
+                <h1>Título del mensaje dos</h1>
+                <h4>Subtítulo del mensaje dos</h4>
+            </hgroup>
+            <time datetime="2020-02-16" pubdate>
+                publicado 16-02-2020
+            </time>
+         </header>
+         Este es el texto de mi segundo mensaje
+         <footer>
+            <p>comentarios (0)</p>
+            <a href="#agrupar"> ir principal </a>
+          </footer>
+    </article> <!-- Fin Segundo articulo-->
+
+</section> <!--Fin de section seccion-->
+
+  <aside id="columna"> <!-- aside -->
+      <blockquote>Mensaje número uno</blockquote>
+      <blockquote>Mensaje número dos</blockquote>
+      <a href="https://www.facebook.com/oscar.miralrio.3" target="_blank">
+         <figure>
+           <img src="img/facebook.jpg" alt="facebook" width="3%" height="3%">
+         </figure>
+       </a>
+
+       <a href="https://www.instagram.com/p/B8wd-jOg3A2/" target="_blank">
+          <figure>
+            <img src="img/instagram.jpg" alt="instagram" width="3%" height="3%">
+          </figure>
+        </a>
+  </aside> <!-- Fin aside -->
+
+  <footer id="pie">
+      Derechos Reservados &copy; 2019-2020 <br>
+      <a href="#agrupar"> ir principal </a>
+      <address>
+          <a href="http://www.itorizaba.edu.mx">ITO</a>
+      </address>
+  </footer>
+
+</div> <!--fin div agrupar-->
+
+</body>
+</html>

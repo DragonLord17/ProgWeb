@@ -1,0 +1,81 @@
+*{
+    margin: 5px;
+    padding: 1px;
+}
+
+#titulo{
+    font: bold 50px arial, sans-serif;
+    font-style: italic;
+    font-size: 20vm;
+    text-shadow: 3px 2px gray;
+    text-align: center;
+}
+
+header, section, footer, aside, nav, hgroup{
+    display: block;
+}
+
+.decadas{
+    text-align: center;
+    font-size: 20px;
+}
+
+#agrupar{
+    width: 960px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+#cabera{
+    background: #FFFBB9;
+    border: 1px solid #999999;
+    padding: 20px;
+}
+
+#menu{
+    background: #CCCCCC;
+    padding: 5px 15px;
+}
+
+#menu li{
+    display: inline-block;
+    list-style: none;
+    font: bold 14px verdana, sans-serif;
+}
+
+#seccion{
+    float: left;
+    width: 660px;
+    margin: 20px;
+}
+
+#columna{
+    float: left;
+}
+
+a:hover {
+    color: rgb(212, 0, 0);
+    
+}
+
+.los70{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul{
+    list-style: inside;
+    text-align: justify;
+    font:  20px verdana, sans-serif;
+}
+
+#los60{
+    text-align: center;
+    font: bold 60px arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+#lista1{
+    background: red;
+}
